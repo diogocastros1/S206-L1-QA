@@ -28,10 +28,10 @@ describe('Criando cenario de testes para o site globalsqa', () => {
   it('Caso de teste: Efetuando login com sucesso', () => {
     let info = criarUsuario()
 
-    cy.get('#username').type(info[0])
-    cy.get('#password').type(info[1])
+    cy.get('#username').type(info.usuario)
+    cy.get('#password').type(info.senha)
     cy.get('.btn-primary').click()
-    cy.get('h1.ng-binding').should('have.text', `Hi ${info[0]}!`)
+    cy.get('h1.ng-binding').should('have.text', `Hi ${info.usuario}!`)
   })
 })
 
@@ -41,7 +41,7 @@ function criarUsuario() {
   let seg = new Date().getSeconds().toString()
   let usuario = horas + minutos + seg + 'Id'
   let senha = horas + minutos + seg + 'Senha'
-  let infoUsuario = [usuario, senha]
+  let infoUsuario = {usuario, senha}
 
   cy.visit('https://globalsqa.com/angularJs-protractor/registration-login-example/#/login')
   cy.get('.btn-link').click() // função para clicar em um botão, para qual elemento 
