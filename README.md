@@ -8,7 +8,9 @@ Repositório para entrega dos exercícios de S206 - Qualidade de Software.
 ~~~
 npm install cypress
 ~~~
-### Executando
+### Executando o Cypress
 ~~~
 ./node_modules/.bin/cypress open
 ~~~
+
+- Ajustei o script do package.json para iniciar com o `npm test`.
