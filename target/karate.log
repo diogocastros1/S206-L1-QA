@@ -1,0 +1,31 @@
+21:47:48.988 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+21:47:53.723 [main]  ERROR com.intuit.karate - aula_inatel/src/test/java/aula_inatel/star_wars/sw.feature:4
+Given "https://swapi.dev/api/people/1/"
+no step-definition method match found for: "https://swapi.dev/api/people/1/"
+aula_inatel/src/test/java/aula_inatel/star_wars/sw.feature:4
+21:47:56.431 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) aula_inatel/src/test/java/aula_inatel/star_wars/sw.feature
+21:48:19.737 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+21:48:21.256 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1683938901241
+21:48:25.098 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:48:26.508 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1402
+1 < 200
+1 < Server: nginx/1.16.1
+1 < Date: Sat, 13 May 2023 00:48:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Allow: GET, HEAD, OPTIONS
+1 < Strict-Transport-Security: max-age=15768000
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+
+21:48:28.861 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) aula_inatel/src/test/java/aula_inatel/star_wars/sw.feature
