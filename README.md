@@ -91,3 +91,10 @@ Para ignorar alguma tag:
 mvn test -Dkarate.options="--tags ~@tag" 
 ~~~
 Todas as tags podem ser configuradas na classe da suíte de testes.
+
+### Relatório de teste
+Assim como o Cypress o Karate tambem gera um HTML para apresentação dos testes, este fica na pasta abaixo:
+
+~~~
+ target/karate-reports/{nome_do_package}.{nome_do_arquivo}
+~~~
